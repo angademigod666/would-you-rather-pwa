@@ -26,9 +26,9 @@ To get the app running right away:
 │   └── index.html # DO NOT MODIFY
 |
 └── src
-	├── actions
-	|		├── authedUser.js
-	|		├── questions.js
+    ├── actions
+    |		├── authedUser.js
+    |		├── questions.js
     |		├── shared.js
     |		└── users.js
     |
@@ -37,8 +37,8 @@ To get the app running right away:
     |		├── ryan.jpg
     |		└── tyler.jpg
     |
-	├── middleware
-	|		├── index.js
+    ├── middleware
+    |		├── index.js
     |		└── logger.js
     |
     ├── reducers
@@ -47,9 +47,9 @@ To get the app running right away:
     |		├── wyrQuestions.js
     |		└── wyrUsers.js
     |
-	├── utils
-	|		├── _DATA_WYR.js
-	|		├── api.js
+    ├── utils
+    |		├── _DATA_WYR.js
+    |		├── api.js
     |		└── helpers.js
     |
     ├── wyr-components
