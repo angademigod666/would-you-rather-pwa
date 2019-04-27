@@ -1,5 +1,6 @@
 # would-you-rather-pwa
 The Would you rather (react-nd-would-you-rather) app deployed as a PWA.
+The app is mobile ready! 
 
 # Live app link: 
 https://wouldyouratherreactpwa.firebaseapp.com/login
