@@ -1,3 +1,12 @@
+html{
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-image: linear-gradient(to bottom right,  #CB6318, #af4425);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 ul {
   padding-left: 0;
 }
@@ -5,4 +14,92 @@ li {
   list-style-type: none;
   padding: 10px;
   text-decoration: none;
+}
+.wrapper {
+  display:flex;
+  justify-content: center;
+}
+
+.buttonAns {
+  position: relative;
+  margin-left: 2%;
+  outline: none;
+  border: none;
+  background: none;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+ .buttonAns:hover,
+ .buttonAns:focus {
+	outline: none;
+}
+/* Effect 14: border switch */
+  .buttonAns {
+	padding: 0 20px;
+	height: 45px;
+	line-height: 45px;
+}
+
+  .buttonAns::before,
+  .buttonAns::after {
+	position: absolute;
+	width: 45px;
+	height: 2px;
+	background: #fff;
+	content: '';
+	opacity: 0.2;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	pointer-events: none;
+}
+
+  .buttonAns::before {
+	top: 0;
+	left: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+  .buttonAns::after {
+	right: 0;
+	bottom: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	transform: rotate(90deg);
+	-webkit-transform-origin: 100% 0;
+	-moz-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+  .buttonAns:hover::before,
+  .buttonAns:hover::after,
+  .buttonAns:focus::before,
+  .buttonAns:focus::after {
+	opacity: 1;
+}
+
+  .buttonAns:hover::before,
+  .buttonAns:focus::before {
+	left: 50%;
+	-webkit-transform: rotate(0deg) translateX(-50%);
+	-moz-transform: rotate(0deg) translateX(-50%);
+	transform: rotate(0deg) translateX(-50%);
+}
+
+  .buttonAns:hover::after,
+  .buttonAns:focus::after {
+	right: 50%;
+	-webkit-transform: rotate(0deg) translateX(50%);
+	-moz-transform: rotate(0deg) translateX(50%);
+	transform: rotate(0deg) translateX(50%);
 }

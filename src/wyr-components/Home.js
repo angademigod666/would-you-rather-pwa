@@ -43,8 +43,16 @@ class Home extends Component {
     return (
       <div className="row">
         <div className='col-sm-8 offset-sm-2'>
+        
           <h3 className='text-center'>WOULD YOU RATHER???</h3>
-          <button className='btn btn-block btn-link' onClick={this.handleShow}>{showUnAnswered === true ? 'Show my answers' : 'Answer more?'}				</button>&nbsp;&nbsp;
+          <br/>
+          <div className="wrapper">
+          <button className='buttonAns' onClick={this.handleShow}>
+          
+          {showUnAnswered === true ? 'Show my answers' : 'Answer more?'}
+          
+          </button> 
+          </div> &nbsp;&nbsp;
   
          <ul>
             {this.state.showUnAnswered === true ? questionIds.map((quesId) => ((!questions[quesId].optionOne.votes.includes(wyrAuthedUser) && !questions[quesId].optionTwo.votes.includes(wyrAuthedUser)) && (
