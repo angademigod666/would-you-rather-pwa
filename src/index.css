@@ -94,11 +94,9 @@ body {
 
 .tres-2 {
   width: 100%;
-  min-height: 200px;
-  line-height: 200px;
-  font-size: 3rem;
+  min-height: 50px;
   font-weight: normal;
-
+  font-size: 2rem;
   text-align: center;
   color: rgb(9, 9, 190);
   margin: auto 0;
