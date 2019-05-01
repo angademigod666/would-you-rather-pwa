@@ -43,9 +43,8 @@ class Home extends Component {
     return (
       <div className="row">
         <div className='col-sm-8 offset-sm-2'>
-        
-          <h3 className='text-center'>WOULD YOU RATHER???</h3>
-          <br/>
+        <h3 className='tres-2 text-center'> <span>WOULD YOU RATHER???</span></h3>
+          
           <div className="wrapper">
           <button className='buttonAns' onClick={this.handleShow}>
           

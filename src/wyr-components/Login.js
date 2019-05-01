@@ -53,7 +53,8 @@ class Login extends Component {
 		}
 		return (
 			<div className="row">
-				<div className="col-sm-6 offset-sm-3">
+				<div className="card col-sm-6 offset-sm-3">
+				<br/>
 					<h1>Please login to continue</h1>
 					<h5>Choose a user from the dropdown...</h5>
 					<form onSubmit={this.submitSignIn}>
@@ -72,6 +73,7 @@ class Login extends Component {
 							<button disabled={!this.state.formValid} className={'btn btn-block btn-outline-success'} type="submit">Login!								</button>
 						</div>
 					</form>
+					<br/>
 				</div>
 			</div>
 		)
